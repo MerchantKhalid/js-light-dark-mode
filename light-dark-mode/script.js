@@ -1,5 +1,6 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]')
 const nav = document.getElementById('nav')
+const navRes = document.getElementsByClassName('mbscreen')
 const toggleIcon = document.getElementById('toggle-icon')
 const image1 = document.getElementById('image1')
 const image2 = document.getElementById('image2')
@@ -15,7 +16,9 @@ function imageMode(color){
 
 //toggle dark light mode
 function toggleDarkLightMode(isDark){
-    nav.style.backgroundColor=isDark? 'rgba(0,0,0 /50%)' : 'rgba(255 255 255 /50%)';
+    // nav.style.backgroundColor=isDark? 'rgba(0,0,0 /50%)' : 'rgba(255 255 255 /50%)';
+    nav.style.backgroundColor=isDark? '#020113' : 'rgba(255 255 255 /50%)';
+    
     textBox.style.backgroundColor=isDark? 'rgba(255 255 255 /50%)': 'rgba(0 0 0 /50%)';
     toggleIcon.children[0].textContent=isDark? 'Dark Mode' : 'Light Mode';
     isDark ? toggleIcon.children[1].classList.replace('fa-sun','fa-moon'): toggleIcon.children[1].classList.replace('fa-moon','fa-sun');

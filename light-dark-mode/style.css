@@ -269,6 +269,7 @@ input[type=checkbox]{
 
   display: none;
   
+  
   }
   
   /*HAMBURGER MENU*/
@@ -293,7 +294,7 @@ input[type=checkbox]{
   }
   .buttons,.social-icons{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 18px;
   }
   .title{
@@ -301,36 +302,38 @@ input[type=checkbox]{
     margin-bottom: 10px;
   }
   input[type=checkbox]:checked ~ .menu{
-
-    display: none;
-    
-    
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
     }
     
-    .hamburger {
+   
+
     
+    .hamburger {
     display: block;
     cursor: pointer;
-    
     }
 
     .menu {
 
-      display:flex;
-      flex-direction: column;
+      display:none;
       
-      /* position: absolute; */
       
-      /* background-color:teal; */
+      position: absolute; 
+      
+       background-color:teal;
   
-      /* right: 0;
+      right: 0;
       
-      left: 0; */
+      left: 0;
       
-      text-align: left;
+      /* text-align: left; */
       /* margin-left: 16px; */
       
-      /* padding: 16px 0; */
+      padding: 16px 0;
       
       }
 
